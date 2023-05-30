@@ -14,9 +14,10 @@ function App() {
 
   return (
     <div className="App">
-      <div onDoubleClick={() => setStatus(!Status)}>
+      <div>
         {Status ? <Item passValue={getValue} /> : <Result data={resultData} />}
       </div>
+      <button onClick={() => setStatus(!Status)}>Card/Add item</button>
     </div>
   );
 }
